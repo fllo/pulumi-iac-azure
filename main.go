@@ -9,7 +9,7 @@ import (
 func main() {
 	pulumi.Run(func(ctx *pulumi.Context) error {
 
-		resourceGroup, err := resources.NewResourceGroup(ctx, "rg",
+		resourceGroup, err := resources.NewResourceGroup(ctx, "fllo-rg",
 			&resources.ResourceGroupArgs{Tags: pulumi.StringMap{"owner": pulumi.String("fllo")}, Location: pulumi.String(`westeurope`)})
 		if err != nil {
 			return err
